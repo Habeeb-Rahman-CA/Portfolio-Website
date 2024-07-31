@@ -1,0 +1,66 @@
+/* -------------Font-Family---------- */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ----------Genaral---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+
+
+/* ----------Hero-Section---------- */
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(300px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.hero .card {
+    background-color: lightgreen;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+
+.hero .card:hover {
+    background-color: green;
+    color: white;
+}
+
+.hero .card:nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.hero .card:nth-child(2) {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.hero .card:nth-child(3) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hero .card:nth-child(4) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hero .card:nth-child(5) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.hero .card:nth-child(6) {
+    grid-row: span 1;
+    grid-column: span 2;
+}
