@@ -9,7 +9,42 @@
     font-family: Inter, sans-serif;
 }
 
+/* -----------Nav-Bar---------- */
+.navbar-brand {
+    padding: 10px !important;
+}
 
+.nav-btn {
+    font-size: 15px !important;
+    margin-left: 15px !important;
+    border: none !important;
+    position: relative;
+}
+
+.nav-btn::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #00c0c0;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.nav-btn:hover::after {
+    width: 100%;
+}
+
+.nav-btn:hover {
+    color: #00c0c0 !important;
+
+}
+
+/* ----------Body---------- */
+body {
+    background-color: #eeeeee !important;
+}
 
 /* ----------Hero-Section---------- */
 .hero {
@@ -19,20 +54,15 @@
     grid-template-rows: minmax(300px, auto);
     margin: 40px;
     grid-auto-flow: dense;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .hero .card {
-    background-color: lightgreen;
     padding: 20px;
     display: grid;
-    place-items: center;
     transition: 0.5s;
-}
-
-.hero .card:hover {
-    background-color: green;
-    color: white;
+    border: none;
+    border-radius: 20px;
 }
 
 .hero .card:nth-child(1) {
@@ -63,4 +93,94 @@
 .hero .card:nth-child(6) {
     grid-row: span 1;
     grid-column: span 2;
+}
+
+/* ----------Photo-Card---------- */
+.hero .bg-1 {
+    background-image: url(./Media/Profile.png);
+    background-size: fill;
+    background-position: center;
+    height: 100%;
+}
+
+.bg-1 .txt-hr {
+    color: rgb(184, 184, 184);
+    font-size: small;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bg-1 .txt-hr:hover {
+    color: white;
+    transform: scaleX(20px);
+    transition: 0.3s;
+    transform: scale(1.01);
+}
+
+/* ----------Article-Card---------- */
+.hero .bg-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.75)), url(./Media/img2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 210px;
+    cursor: pointer;
+}
+
+.article .box-txt {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    width: 51px;
+    ;
+    padding: 0 5px;
+    border: #ffffff 2px solid;
+    transition: 0.3s;
+}
+
+.article .art-head {
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.article .fa-arrow-up-right-from-square {
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+.bg-2:hover .box-txt {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* ----------Hello-Card---------- */
+.hello {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.hello h1 {
+    font-weight: 800;
+}
+
+.hello .intro-txt {
+    font-size: 13px;
+}
+
+/* ----------Social-Card---------- */
+.social {
+    display: grid;
+    justify-content: center;
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 48px;
+    grid-column-gap: 48px;
+}
+.social i{
+    font-size: 28px;
 }
