@@ -73,7 +73,7 @@ body {
     transition: 0.3s;
 }
 
-.bg-1:hover .txt-hr{
+.bg-1:hover .txt-hr {
     color: white;
     transform: scaleX(20px);
     transition: 0.3s;
@@ -94,7 +94,6 @@ body {
     font-size: 12px;
     font-weight: 500;
     width: 51px;
-    ;
     padding: 0 5px;
     border: #ffffff 2px solid;
     transition: 0.3s;
@@ -145,23 +144,117 @@ body {
     grid-row-gap: 60px;
     grid-column-gap: 60px;
 }
-.social i{
+
+.social i {
     font-size: 30px;
     color: rgb(84, 84, 84);
 }
-.social .fa-instagram:hover{
+
+.social .fa-instagram:hover {
     color: #ff009d;
     transition: 0.3s;
 }
-.social .fa-linkedin-in:hover{
+
+.social .fa-linkedin-in:hover {
     color: #1959fc;
     transition: 0.3s;
 }
-.social .fa-github:hover{
+
+.social .fa-github:hover {
     color: #000000;
     transition: 0.3s;
 }
-.social .fa-youtube:hover{
+
+.social .fa-youtube:hover {
     color: #ff0000;
     transition: 0.3s;
+}
+
+/* ----------Skill-Card---------- */
+.skill {
+    padding: 23px;
+}
+
+.skill-card {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.759), rgba(0, 0, 0, 0.75)), url(./Media/img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.progress {
+    margin: 28px 0;
+}
+
+.progress .bg-html {
+    font-weight: bold;
+    background-color: #e34c26;
+}
+
+.progress .bg-css {
+    font-weight: bold;
+    background-color: #264de4;
+}
+
+.progress .bg-boot {
+    font-weight: bold;
+    background-color: #712bdb;
+}
+
+.progress .bg-js {
+    font-weight: bold;
+    background-color: #24c82f;
+}
+
+/* ----------About-Me---------- */
+.about-card {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./Media/img4.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px !important;
+    padding: 40px;
+    cursor: pointer;
+    margin: 16px 0;
+}
+
+.about-card .abt-head {
+    font-size: 26px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.about-card .abt-txt {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: small;
+    text-align: justify;
+}
+/* ------------Services---------- */
+.service-card{
+    background-color: #000000 !important;
+    padding: 20px;
+    margin: 10px 0;
+    border: none !important;
+    border-radius: 20px !important;
+    display: grid;
+    place-items: center;
+}
+
+.service-card .fa-layer-group{
+    font-size: 56px;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+}
+.service-card .fe-head{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.service-card .fe-txt{
+    color: #ffffff;
+    padding: 5px 40px;
+    font-size: small;
+    font-weight: 400;
+    text-align: center;
 }
