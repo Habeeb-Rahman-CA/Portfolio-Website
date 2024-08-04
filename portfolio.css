@@ -232,7 +232,7 @@ body {
 }
 /* ------------Services---------- */
 .service-card{
-    background-color: #000000 !important;
+    background-color: #16213E !important;
     padding: 20px;
     margin: 10px 0;
     border: none !important;
@@ -249,7 +249,7 @@ body {
 .service-card .fe-head{
     color: rgb(255, 255, 255);
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: uppercase;  
 }
 .service-card .fe-txt{
     color: #ffffff;
@@ -321,3 +321,44 @@ body {
     color: white;
     font-size: 15px;
 }
+/* ----------Explore---------- */
+.explore-card{
+    background-image: url(./Media/p3.png) ;
+    background-size: cover;
+    background-position: center;
+    height: 262px !important;
+    margin: 10px 0;
+    border: none !important;
+    border-radius: 20px !important;
+    cursor: pointer;
+}
+.ex-head{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 200px;
+    position: relative;
+}
+.fa-circle-arrow-right{
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    bottom: 31px;
+    right: 142px;
+    opacity: 0;
+    transition: .5s;
+    transform: rotate(180deg);
+    
+}
+.explore-card:hover .fa-circle-arrow-right{
+    opacity: 1;
+    transform: rotate(0);
+} 
+/* ----------------------------------------------Media-query */
+@media only screen and (max-width:480px) {
+    .fa-circle-arrow-right{
+        right: 50px;
+        bottom: 34px;
+    }
+}
+/* ----------Footer---------- */
