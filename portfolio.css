@@ -1,6 +1,9 @@
 /* -------------Font-Family---------- */
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 /* ----------Genaral---------- */
 * {
     margin: 0;
@@ -12,6 +15,8 @@
 /* -----------Nav-Bar---------- */
 .navbar-brand {
     padding: 10px !important;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
 }
 
 .nav-btn {
@@ -40,7 +45,6 @@
     color: #00c0c0 !important;
 
 }
-
 /* ----------Body---------- */
 body {
     background-color: #eeeeee !important;
@@ -131,6 +135,7 @@ body {
 
 .hello .intro-txt {
     font-size: 13px;
+    text-align: justify;
 }
 
 /* ----------Social-Card---------- */
@@ -207,9 +212,10 @@ body {
 
 /* ----------About-Me---------- */
 .about-card {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./Media/img4.jpg);
+    background-image:url(./Media/about.png);
     background-position: center;
     background-size: cover;
+    border: none !important;
     border-radius: 20px !important;
     padding: 40px;
     cursor: pointer;
@@ -217,10 +223,9 @@ body {
 }
 
 .about-card .abt-head {
-    font-size: 26px;
+    font-size: 32px;
     color: white;
-    font-weight: 700;
-    text-align: center;
+    font-weight: bolder;
     padding-bottom: 15px;
 }
 
@@ -229,6 +234,15 @@ body {
     font-weight: 300;
     font-size: small;
     text-align: justify;
+}
+@media only screen and (max-width:480px) {
+    .about-card {
+        background-image:url(./Media/about-mq.png);
+        padding-bottom: 520px;
+    }
+    .about-card .abt-head{
+        font-size: 24px;
+    }
 }
 /* ------------Services---------- */
 .service-card{
@@ -257,6 +271,12 @@ body {
     font-size: small;
     font-weight: 400;
     text-align: center;
+}
+/* ----------------------------------------------Media-query */
+@media only screen and (max-width:480px) {
+    .service-card .fe-txt{
+        text-align: justify;
+    }
 }
 /* ----------Project---------- */
 .project-1{
@@ -297,7 +317,7 @@ body {
 }
 .p1-txt{
     color: white;
-    font-size: 15px;
+    font-size: small;
 }
 .p2-content{
     padding: 36px;
@@ -319,7 +339,13 @@ body {
 }
 .p2-txt{
     color: white;
-    font-size: 15px;
+    font-size: small;
+}
+/* ----------------------------------------------Media-query */
+@media only screen and (max-width:480px) {
+    .p1-txt, .p2-txt{
+        text-align: justify;
+    }
 }
 /* ----------Explore---------- */
 .explore-card{
@@ -362,3 +388,41 @@ body {
     }
 }
 /* ----------Footer---------- */
+.footer-card{
+    margin: 20px 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 84px 0;
+    border: none !important;
+    border-radius: 20px !important;
+}
+.footer-head{
+    font-size: 16px;
+    font-weight: 800;
+}
+.icon-block i{
+    padding: 5px 20px;
+    font-size: 32px;
+    color: #444444;
+}
+.icon-block .fa-instagram:hover {
+    color: #ff009d;
+    transition: 0.3s;
+}
+
+.icon-block .fa-linkedin-in:hover {
+    color: #1959fc;
+    transition: 0.3s;
+}
+
+.icon-block .fa-github:hover {
+    color: #000000;
+    transition: 0.3s;
+}
+
+.icon-block .fa-youtube:hover {
+    color: #ff0000;
+    transition: 0.3s;
+}
