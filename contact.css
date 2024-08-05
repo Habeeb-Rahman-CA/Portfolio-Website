@@ -1,0 +1,199 @@
+/* -------------Font-Family---------- */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* ----------Genaral---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+/* -----------Nav-Bar---------- */
+.navbar-brand {
+    padding: 10px !important;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    color: white !important;
+}
+
+.nav-btn {
+    font-size: 14px !important;
+    margin-left: 12px !important;
+    border: none !important;
+    position: relative;
+    color: #ffffff !important;
+}
+
+.nav-btn::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #00c0c0;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.nav-btn:hover::after {
+    width: 100%;
+}
+
+.nav-btn:hover {
+    color: #00c0c0 !important;
+
+}
+
+/* ----------Body---------- */
+body {
+    background-color: #000000 !important;
+}
+
+/* ----------Contact-Form----------- */
+.contact-section {
+    background-color: #1c1d20 !important;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.c-head {
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+
+.formdiv {
+    padding: 20px 0;
+}
+
+.form-label {
+    color: rgb(191, 190, 190);
+    font-size: 24px;
+}
+
+.form-control {
+    border: none !important;
+    background-color: transparent !important;
+    font-size: 24px !important;
+    color: #ffffff !important;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.11) !important;
+}
+
+.sub-btn {
+    font-size: 24px;
+    border: none !important;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+.sub-btn:hover i {
+    color: #00c0c0;
+    transition: 0.3s;
+}
+
+/* ----------Footer--------- */
+.footer-card {
+    margin: 20px 0;
+    background-color: #1c1d20 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 84px 0;
+    border: none !important;
+    border-radius: 20px !important;
+    position: relative;
+}
+
+.footer-head {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+.wa-btn {
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0px 10px;
+    transition: 0.3s;
+    position: absolute;
+    right: 250px
+}
+
+.call-btn {
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s;
+    position: absolute;
+    left: 250px;
+}
+
+.wa-btn:hover {
+    color: #ffffff;
+    background-color: #00A578;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.call-btn:hover {
+    color: #ffffff;
+    background-color: #006769;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.icon-block i {
+    padding: 5px 20px;
+    font-size: 32px;
+    color: #686868;
+}
+
+.icon-block .fa-instagram:hover {
+    color: #ff009d;
+    transition: 0.3s;
+}
+
+.icon-block .fa-linkedin-in:hover {
+    color: #1959fc;
+    transition: 0.3s;
+}
+
+.icon-block .fa-github:hover {
+    color: #000000;
+    transition: 0.3s;
+}
+
+.icon-block .fa-youtube:hover {
+    color: #ff0000;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width:480px) {
+    .wa-btn {
+        bottom: 30px;
+        right: 80px;
+
+    }
+
+    .call-btn {
+        bottom: 30px;
+        left: 80px;
+
+    }
+}
