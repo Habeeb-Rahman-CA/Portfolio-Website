@@ -64,7 +64,7 @@ body {
 /* ----------Photo-Card---------- */
 
 .hero .bg-1 {
-    background-image: url(./Media/Profile.png);
+    background-image: url(./images/Profile.png);
     background-size: fill;
     background-position: center;
     height: 600px;
@@ -87,7 +87,7 @@ body {
 
 /* ----------Article-Card---------- */
 .hero .bg-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.75)), url(./Media/img2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.75)), url(./images/img2.jpg);
     background-position: center;
     background-size: cover;
     padding-top: 210px;
@@ -182,7 +182,7 @@ body {
 }
 
 .skill-card {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.759), rgba(0, 0, 0, 0.75)), url(./Media/img3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.759), rgba(0, 0, 0, 0.75)), url(./images/img3.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -213,7 +213,7 @@ body {
 
 /* ----------About-Me---------- */
 .about-card {
-    background-image: url(./Media/about.png);
+    background-image: url(./images/about.png);
     background-position: center;
     background-size: cover;
     border: none !important;
@@ -239,7 +239,7 @@ body {
 
 @media only screen and (max-width:480px) {
     .about-card {
-        background-image: url(./Media/about-mq.png);
+        background-image: url(./images/about-mq.png);
         padding-bottom: 520px;
     }
 
@@ -288,7 +288,7 @@ body {
 
 /* ----------Project---------- */
 .project-1 {
-    background-image: url(./Media/p1.png);
+    background-image: url(./images/p1.png);
     background-size: cover;
     background-position: center;
     height: 800px !important;
@@ -298,7 +298,7 @@ body {
 }
 
 .project-2 {
-    background-image: url(./Media/p2.png);
+    background-image: url(./images/p2.png);
     background-size: cover;
     background-position: center;
     height: 800px !important;
@@ -370,7 +370,7 @@ body {
 
 /* ----------Explore---------- */
 .explore-card {
-    background-image: url(./Media/p3.png);
+    background-image: url(./images/p3.png);
     background-size: cover;
     background-position: center;
     height: 262px !important;
